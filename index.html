@@ -1,0 +1,179 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D.H. – Personal Portfolio</title>
+    <meta name="description" content="My name is D.H., I’m a full-time software developer in the hotel software industry. My main focus lies in backend development with C++." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <div class="video-background">
+      <video autoplay muted loop id="background-video">
+          <source src="img/Background-Video.mp4" type="video/mp4">
+          Dein Browser unterstützt kein HTML5 Video.
+      </video>
+      <div class="video-overlay"></div> <!-- Transparent layer -->
+    </div>
+
+    <!-- Burger Icon -->
+    <div class="burger-icon" onclick="openMenu()">&#9776;</div>
+
+    <!-- Sidebar Menu -->
+    <div id="sidebarMenu" class="sidebar">
+      <div class="logo"></div>
+      <a href="#home">Home</a>
+      <a href="#aboutMe">About Me</a>
+      <a href="#work">Experiences</a>
+      <a href="#skills">Skills</a>
+      <a href="#other">Others</a>
+      <a href="#projects">Projects</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+    </div>
+
+    <div id="home"></div>
+    
+    <div id="default">
+        <h3>Hi there, I’m</h3>
+        <h1>D.H.</h1>
+        <h2>Software Developer</h2>
+        <p>Focused on backend and occasionally Full-Stack development.</p>
+        <a href="#aboutMe" class="button">Learn More</a>
+    </div>
+
+    <main>
+      <section id="aboutMe">
+        <h1>About Me</h1>
+        <p>
+		  My name is D.H., I’m a full-time employed software developer in the hotel software industry.
+          I specialize in backend development, primarily using C++.
+        </p>
+        <p>
+          I love solving complex problems and creating scalable, efficient software solutions.
+        </p>
+      </section>
+
+      <section id="work">
+        <h1>Professional Experience</h1>
+        <p><strong>Software Developer | Hotel Industry</strong> (2022 – Present)</p>
+        <p>Focus on backend development with C++, bug fixing, and developing new features and modules.</p>
+        <p><strong>Completed Apprenticeship</strong> (2022)</p>
+        <p>Completed apprenticeship as an application developer, with a focus on backend systems. Worked in various departments including frontend development, maintenance, and technical support.</p>
+      </section>
+
+      <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills">
+          <!-- C++ -->
+          <div class="skill-card">
+            <h3>C++</h3>
+            <p>Advanced knowledge in development and optimization.</p>
+            <div class="rating">
+              <div class="rating-square"></div>
+              <div class="rating-square"></div>
+              <div class="rating-square"></div>
+              <div class="rating-square"></div>
+              <div class="rating-square empty"></div>
+            </div>
+          </div>
+          <!-- JavaScript -->
+          <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Good knowledge of web development.</p>
+            <div class="rating">
+              <div class="rating-square"></div>
+              <div class="rating-square"></div>
+              <div class="rating-square"></div>
+              <div class="rating-square half"></div>
+              <div class="rating-square empty"></div>
+            </div>
+          </div>
+          <!-- C# -->
+          <div class="skill-card">
+            <h3>C#</h3>
+            <p>Proficient in application and game development.</p>
+            <div class="rating">
+              <div class="rating-square"></div>
+              <div class="rating-square"></div>
+              <div class="rating-square"></div>
+              <div class="rating-square empty"></div>
+              <div class="rating-square empty"></div>
+            </div>
+          </div>
+          <!-- Java -->
+          <div class="skill-card">
+            <h3>Java</h3>
+            <p>Basic understanding of backend development.</p>
+            <div class="rating">
+              <div class="rating-square"></div>
+              <div class="rating-square"></div>
+              <div class="rating-square half"></div>
+              <div class="rating-square empty"></div>
+              <div class="rating-square empty"></div>
+            </div>
+          </div>
+          <!-- Python -->
+          <div class="skill-card">
+            <h3>Python</h3>
+            <p>Basic scripting and data analysis skills.</p>
+            <div class="rating">
+              <div class="rating-square"></div>
+              <div class="rating-square empty"></div>
+              <div class="rating-square empty"></div>
+              <div class="rating-square empty"></div>
+              <div class="rating-square empty"></div>
+            </div>
+          </div>
+        </div>
+        
+        <h1>Languages</h1>
+        <div class="skills">
+          <!-- German -->
+          <div class="skill-card">
+            <h3>German</h3>
+            <p>Native speaker.</p>
+            <div class="rating">
+              <div class="rating-square"></div>
+              <div class="rating-square"></div>
+              <div class="rating-square"></div>
+              <div class="rating-square"></div>
+              <div class="rating-square"></div>
+            </div>
+          </div>
+          <!-- English -->
+          <div class="skill-card">
+            <h3>English</h3>
+            <p>C1 proficiency level.</p>
+            <div class="rating">
+              <div class="rating-square"></div>
+              <div class="rating-square"></div>
+              <div class="rating-square"></div>
+              <div class="rating-square"></div>
+              <div class="rating-square empty"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h1>Projects</h1>
+        <div class="projects"></div>
+        <p><i>Coming soon...</i></p>
+      </section>
+
+	    <section id="other">
+        <h1>Other Skills & Tools</h1>
+        <p>Agile methodologies (Scrum), Visual Studio, Git, Visual Studio Code, MS Office, Markdown, and more.</p>
+      </section>
+
+      <div class="contact">
+        <h1>Contact</h1>
+        <p>Reach out on <a href=https://www.xing.com/profile/David_Henrich7/web_profiles>Xing</a></p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
